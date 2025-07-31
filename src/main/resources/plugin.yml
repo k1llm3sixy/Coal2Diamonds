@@ -1,0 +1,12 @@
+name: Coal2Diamonds
+version: '1.0.0'
+main: com.ygolokk.coal2Diamonds.Coal2Diamonds
+api-version: '1.18'
+authors: [ ygolokk ]
+website: https://vk.com/nevtryagn
+commands:
+  coal2diamonds:
+    description: "Turning the plugin"
+    usage: "/<command> <enable|disable>"
+    aliases:
+      - c2d
