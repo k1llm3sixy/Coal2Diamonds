@@ -4,7 +4,7 @@ plugins {
     id("xyz.jpenilla.run-paper") version "2.3.1"
 }
 
-group = "com.ygolokk"
+group = "com.k1llm3sixy"
 version = "1.0.0"
 
 repositories {
@@ -24,9 +24,6 @@ dependencies {
 
 tasks {
     runServer {
-        // Configure the Minecraft version for our task.
-        // This is the only required configuration besides applying the plugin.
-        // Your plugin's jar (or shadowJar if present) will be used automatically.
         minecraftVersion("1.17")
     }
 }
@@ -34,28 +31,6 @@ tasks {
 val targetJavaVersion = 17
 kotlin {
     jvmToolchain(targetJavaVersion)
-}
-
-tasks.register<Copy>("copyShadowJar") {
-    dependsOn(tasks.shadowJar)
-    from(tasks.shadowJar.get().archiveFile)
-    into("C:\\Users\\ygolokk\\Desktop\\РАБОТА\\server\\plugins")
-}
-
-tasks.register<Exec>("runServerJar") {
-    dependsOn("copyShadowJar")
-    workingDir = file("C:\\Users\\ygolokk\\Desktop\\РАБОТА\\server")
-    commandLine = listOf(
-        "java",
-        "-Dlog4j.skipJansi=true",
-        "-jar",
-        "server.jar",
-        "nogui"
-    )
-}
-
-tasks.build {
-    dependsOn("runServerJar")
 }
 
 tasks.processResources {

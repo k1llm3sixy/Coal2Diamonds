@@ -1,7 +1,7 @@
-package com.ygolokk.coal2Diamonds
+package com.k1llm3sixy.coal2Diamonds
 
-import com.ygolokk.coal2Diamonds.cmds.CmdSmelter
-import com.ygolokk.coal2Diamonds.logic.SmelterHandler
+import com.k1llm3sixy.coal2Diamonds.cmds.CmdSmelter
+import com.k1llm3sixy.coal2Diamonds.logic.SmelterHandler
 import org.bukkit.plugin.java.JavaPlugin
 
 class Coal2Diamonds : JavaPlugin() {

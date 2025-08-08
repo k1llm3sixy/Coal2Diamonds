@@ -1,4 +1,4 @@
-package com.ygolokk.coal2Diamonds.logic
+package com.k1llm3sixy.coal2Diamonds.logic
 
 import org.bukkit.Material
 import org.bukkit.block.BlockFace

@@ -1,4 +1,4 @@
-package com.ygolokk.coal2Diamonds.cmds
+package com.k1llm3sixy.coal2Diamonds.cmds
 
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
